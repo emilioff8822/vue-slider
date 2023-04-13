@@ -12,17 +12,19 @@
 <body>
   <div id="app">
 
-    <h1 class="title">{{infoPizze.titolo}}</h1>
+    <div id="app" class="container">
 
-    <div class="slider">
-    <img :src="pizze[counter]" alt="Pizza image">
-
-    <h2>{{nomiPizze[counter]}}</h2>
-    
-    <button @click="prev" class="prev">prev</button>
-    <button @click="next" class="next">next</button>
-
-
+      <h1 class="title">Scegli la Pizza</h1>
+     
+      <div class="slider">
+        <img :src="pizze[counter]" alt="Pizza image">
+        
+        
+        <h2>{{nomiPizze[counter]}}</h2>
+        <button @click="prev" class="prev">prev</button>
+        <button @click="next" class="next">next</button>
+      </div>
+    </div>
 
     </div>
 
