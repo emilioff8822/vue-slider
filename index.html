@@ -16,9 +16,11 @@
 
     <div class="slider">
     <img :src="pizze[counter]" alt="Pizza image">
+
+    <h2>{{nomiPizze[counter]}}</h2>
     
-    <button @click="nextPrev (-1)" class="prev">prev</button>
-    <button @click="nextPrev (1)" class="prev">next</button>
+    <button @click="prev" class="prev">prev</button>
+    <button @click="next" class="prev">next</button>
 
 
 
